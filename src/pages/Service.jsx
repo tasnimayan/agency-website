@@ -1,10 +1,12 @@
 import ServiceList from "../components/services/ServiceList";
+import Navigator from "../components/Navigator";
 
 const Service = () => {
   return (
-    <div>
+    <>
+      <Navigator path={"Service"}/>
       <ServiceList />
-    </div>
+    </>
   );
 };
 

@@ -72,3 +72,13 @@ header {
   margin: auto;
   object-fit: cover;
 }
+
+/* === BreadCrumb === */
+.bread-crumb {
+  background-color: #f8f9fc;
+  font-family: "Poppins";
+  padding: 60px 100px;
+}
+.bread-crumb .current {
+  color: var(--color-accent-primary);
+}

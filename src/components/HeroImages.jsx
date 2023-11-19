@@ -1,8 +1,8 @@
-import './serviceCard.style.css'
+// import './serviceCard.style.css'
 
-const ServiceCard = () => {
+const HeroImages = () => {
   return (
-    <div className="col-md-6 d-sm-block w-50 p-0">
+    <div className="col-lg-6 p-0">
       <div className="row g-3 m-0" style={{height:"270px"}}>
         <div className="col-8"><img src="./images/hero_1.jpg" alt="" style={{objectFit:"cover", width:"100%", height:"270px"}} className='rounded-3'/></div>
         <div className="col-4">
@@ -22,4 +22,4 @@ const ServiceCard = () => {
   );
 };
 
-export default ServiceCard;
+export default HeroImages;

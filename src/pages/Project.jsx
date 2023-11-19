@@ -1,10 +1,12 @@
 import ProjectList from "../components/projects/ProjectList";
+import Navigator from "../components/Navigator";
 
 const Project = () => {
   return (
-    <div>
+    <>
+      <Navigator path={"Projects"}/>
       <ProjectList />
-    </div>
+    </>
   );
 };
 

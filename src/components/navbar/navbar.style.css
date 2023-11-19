@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--bg-primary);
-  padding: 5px 100px;
+  padding: 5px 40px 5px 100px;
   color: var(--text-primary);
   z-index: 99;
   font-size: 16px;
@@ -65,4 +65,43 @@
 .top-nav .register {
   background-color: var(--color-accent-primary);
   color: #fff;
+}
+.top-nav .menubar {
+  display: none;
+}
+
+.partners img {
+  height: 60px;
+}
+@media only screen and (max-width: 1080px) {
+  .top-nav {
+    position: static;
+    padding: 5px 30px;
+  }
+  .top-nav ul {
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255);
+    font-size: 1.2rem;
+  }
+  .top-nav ul li {
+    display: block;
+    padding: 20px;
+  }
+  .top-nav .menubar {
+    display: inline-block;
+  }
+
+  .partners img {
+    height: 30px;
+  }
+
+  .section-slogan {
+    width: 100%;
+  }
 }

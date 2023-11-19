@@ -7,10 +7,18 @@ import Team from "../../pages/Team";
 import Service from "../../pages/Service";
 import Project from "../../pages/Project";
 import Testimonial from "../../pages/Testimonial";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
+
 
 
 
 const NavBar = () => {
+  const menuBar = useRef();
+  const handleMenuClick = ()=>{
+      console.log("Click")
+    }
 
   // let isLogged = false;
   return (
@@ -20,6 +28,9 @@ const NavBar = () => {
           <h3 className="logo">Design<span className="logo-accent">AGENCY</span></h3>
         </div>
         <div>
+          <span className="menubar py-2 px-3 fs-4" onClick={handleMenuClick}>
+            <FontAwesomeIcon icon={faBars} />
+          </span>
           <ul>
             <li><NavLink to="/" className={({ isActive }) => isActive? "active": ''}>Home</NavLink></li>
             <li><NavLink to="/team" className={({ isActive }) => isActive? "active": ''}>Team</NavLink></li>
@@ -29,6 +40,8 @@ const NavBar = () => {
             <li><button className="btn login border-1 ">Login</button></li>
             <li><button className="btn register">Register</button></li>
           </ul>
+            
+
         </div>
         
       </nav>

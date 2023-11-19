@@ -1,6 +1,6 @@
 
 const FeaturedCard = ({data}) => {
-  console.log(data.imgSrc)
+
   return ( 
     <div className="col-6">
       <div>
