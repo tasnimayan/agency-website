@@ -54,23 +54,23 @@ Add additional functionalities as required.
 
 # Home Page
 
-![Home Page](https://github.com/tasnimayan/mern-ecommerce/blob/main/public/screenshot/home.png)
+![Home Page](https://github.com/tasnimayan/agency-website/blob/main/public/screenshot/home.png)
 
 # Service Page
 
-![Service Page](https://github.com/tasnimayan/mern-ecommerce/blob/main/public/screenshot/services.png)
+![Service Page](https://github.com/tasnimayan/agency-website/blob/main/public/screenshot/services.png)
 
 # Projects Page
 
-![Projects Page](https://github.com/tasnimayan/mern-ecommerce/blob/main/public/screenshot/projects.png)
+![Projects Page](https://github.com/tasnimayan/agency-website/blob/main/public/screenshot/projects.png)
 
 # Team Page
 
-![Team Page](https://github.com/tasnimayan/mern-ecommerce/blob/main/public/screenshot/team.png)
+![Team Page](https://github.com/tasnimayan/agency-website/blob/main/public/screenshot/team.png)
 
 # Testimonial Page
 
-![Testimonial Page](https://github.com/tasnimayan/mern-ecommerce/blob/main/public/screenshot/testimonial.png)
+![Testimonial Page](https://github.com/tasnimayan/agency-website/blob/main/public/screenshot/testimonial.png)
 
 ## Live Link
 
