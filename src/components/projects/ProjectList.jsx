@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 
 const ProjectList = () => {
   return (
-    <section className='project-section' style={{paddingRight:"100px"}}>
+    <section className='project-section pe-lg-5'>
       <div>
         <p className="section-title">ALL PROJECT</p>
         <p className="section-slogan">Better Agency/SEO Solution At Your Fingertips</p>

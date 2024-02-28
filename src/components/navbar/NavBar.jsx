@@ -16,11 +16,11 @@ import { useRef } from "react";
 
 const NavBar = () => {
   const menuBar = useRef();
+  const menuList = useRef();
   const handleMenuClick = ()=>{
-      console.log("Click")
-    }
+    menuList.current.classList.toggle("hidden")
+  }
 
-  // let isLogged = false;
   return (
     <div>
       <nav className="top-nav">
@@ -28,19 +28,20 @@ const NavBar = () => {
           <h3 className="logo">Design<span className="logo-accent">AGENCY</span></h3>
         </div>
         <div>
-          <span className="menubar py-2 px-3 fs-4" onClick={handleMenuClick}>
+          <span ref={menuBar} className="menubar py-2 px-3 fs-4" onClick={handleMenuClick}>
             <FontAwesomeIcon icon={faBars} />
           </span>
-          <ul>
+          <ul className="hidden" ref={menuList}>
             <li><NavLink to="/" className={({ isActive }) => isActive? "active": ''}>Home</NavLink></li>
             <li><NavLink to="/team" className={({ isActive }) => isActive? "active": ''}>Team</NavLink></li>
             <li><NavLink to="/service" className={({ isActive }) => isActive? "active": ''}>Service</NavLink></li>
             <li><NavLink to="/projects" className={({ isActive }) => isActive? "active": ''}>Projects</NavLink></li>
             <li><NavLink to="/testimonial" className={({ isActive }) => isActive? "active": ''}>Testimonial</NavLink></li>
-            <li><button className="btn login border-1 ">Login</button></li>
-            <li><button className="btn register">Register</button></li>
-          </ul>
-            
+            <li>
+              <button className="btn login ">Login</button>
+              <button className="btn register">Register</button>
+            </li>
+          </ul>            
 
         </div>
         

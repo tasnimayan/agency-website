@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 #root {
   width: 100%;
   margin: 0;
@@ -10,19 +14,6 @@ header {
   padding: 60px 40px 60px 100px;
 }
 
-@media only screen and (max-width: 576px) {
-  section,
-  header {
-    padding: 40px 20px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  section,
-  header {
-    padding: 60px 60px;
-  }
-}
 /* ====== Global styling ===== */
 .d-flex-center {
   display: flex;
@@ -43,6 +34,7 @@ header {
   line-height: 1.4;
   width: 500px;
 }
+
 .partners {
   padding: 30px 0;
   background-color: var(--bg-primary);
@@ -81,4 +73,23 @@ header {
 }
 .bread-crumb .current {
   color: var(--color-accent-primary);
+}
+
+@media only screen and (max-width: 576px) {
+  section,
+  header {
+    padding: 40px 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section,
+  header {
+    padding: 60px 40px;
+  }
+
+  .work-card .btn {
+    background-color: var(--color-accent-secondary);
+    color: #fff !important;
+  }
 }

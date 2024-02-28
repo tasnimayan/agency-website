@@ -23,8 +23,8 @@ const StatCard = ({data}) => {
   }
 
   return (
-    <div className="col-md-3">
-      <div className='stat-card'>
+    <div className="col-6 col-md-3 text-center">
+      <div className='stat-card d-flex flex-column justify-content-center align-items-center rounded-4 p-4' style={{boxShadow:"5px 5px 15px rgba(0, 0, 0, 0.05)"}}>
         <div className='icon group'>
           <FontAwesomeIcon icon={icon} />
         </div>
